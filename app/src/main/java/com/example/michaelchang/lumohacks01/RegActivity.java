@@ -41,11 +41,11 @@ public class RegActivity extends AppCompatActivity {
                 String password2Text = password2View.getText().toString();
 
                 if(usernameText.isEmpty() || confirmationText.isEmpty() || passwordText.isEmpty() || passwordText.isEmpty()) { //check for not empty
-                    Toast.makeText(MainActivity.this, "Please fill out all text boxes", Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegActivity.this, "Please fill out all text boxes", Toast.LENGTH_LONG).show();
                     return;
                 }
                 if(!passwordText.equals(password2Text)) { //check that password matches
-                    Toast.makeText(MainActivity.this, "Password does not match", Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegActivity.this, "Password does not match", Toast.LENGTH_LONG).show();
                     return;
                 }
 
